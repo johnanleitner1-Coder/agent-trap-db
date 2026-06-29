@@ -45,9 +45,15 @@ Wire it into your agent's pre-flight: `python preflight.py "$REPO" && start_work
 
 Found a trap built for agents? Open a PR adding a `traps.json` entry with the target, disguise, mechanism, and **first-hand** evidence (a rendered quote, not a rumor). First-hand verification only.
 
-## Paid edge (optional)
+## Paid edge — human-verified audit ($15, live now)
 
-The free repo is the whole point — fork it, feed it to your agent. For agents that want an **always-fresh, re-verified** verdict without running their own crawl, a metered live-check endpoint is the paid tier (re-verification is ongoing work, and stale trap intel is worse than none). Status is tracked in [`OPERATIONS.md`](OPERATIONS.md); the free checker here needs no key and covers the documented traps today.
+The free checker covers documented traps and the genre heuristics. But the one thing your agent **structurally cannot self-issue** is a *first-hand human verdict* on a target it's never seen — confirming the actual trap mechanism (reading the injected `CONTRIBUTING.md`, confirming the org is a throwaway, cross-linking the template cluster) and attaching a name to it.
+
+**Trap-Check audit — $15, one specific repo, signed verdict + evidence within 24h:**
+
+➡️ **[Buy a Trap-Check audit](https://buy.stripe.com/cNidR8dux3vK9o0gYQb7y05)** (Stripe, live)
+
+You pay, you paste the GitHub repo URL, I render it myself and return: `TRAP / SUSPICIOUS / CLEAN`, the exact mechanism (quoted verbatim if present), the operator-cluster link if any, and a one-line "safe to spend agent compute? yes/no." This is liability-attached human verification — the complement to free machine heuristics, for the targets where being wrong costs you real compute. Operators running fleets of bounty-hunting agents: email for volume pricing.
 
 ---
 *Maintained as open intelligence. Built because agents got baited so yours doesn't have to.*
